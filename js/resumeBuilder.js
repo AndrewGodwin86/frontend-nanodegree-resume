@@ -13,25 +13,78 @@ var bio = {
 	"skills": ["Programming", "Maths", "JavaScript"]
 };
 
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+$("#header").prepend(formattedRole);
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+$("#header").prepend(formattedName);
+var formattedEmail = HTMLemail.replace("%data%", bio.contactInfo.email);
+$("#topContacts").append(formattedEmail);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contactInfo.twitter);
+$("#topContacts").append(formattedTwitter);
+var formattedGithub = HTMLgithub.replace("%data%", bio.contactInfo.github);
+$("#topContacts").append(formattedGithub);
+var formattedBlog = HTMLblog.replace("%data%", bio.contactInfo.blog);
+$("#topContacts").append(formattedBlog);
+var formattedPic = HTMLbioPic.replace("%data%", bio.pictureURL);
+$("#header").append(formattedPic);
+var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
+$("#header").append(formattedWelcomeMsg);
+
+
+
+
+if (bio.skills.length > 0) {
+	$("#header").append(HTMLskillsStart);
+
+	var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+	$("#skills").append(formattedSkill);
+}
+
 var work = {
 	"jobs": [
 		{
-			"Employer": "GodwinConsulting.Net",
-			"Position": "Consultant",
-			"workDates": "2009-2014",
-			"workCity": "London",
+			"employer": "GodwinConsulting.Net",
+			"position": "Consultant",
+			"workDates": "2008 - present",
+			"workLocation": "London, UK",
 			"description": "Carrying out various tasks including software audits, IT service assessments, web development."
 		},
 		{
 			"employer": "Make Architects",
 			"position": "Business and Information Systems Coordinator",
-			"workDates": "2008-2015",
-			"workCity": "London",
+			"workDates": "Sept 2009 - May 2014",
+			"workLocation": "London, UK",
 			"description": "Responsible for managing and developing the business systems of the practice, including Intranet, DAM system etc."
+		},
+		{
+			"employer": "Northumbria Universities Officer Training Corps, British Army",
+			"position": "Office Cadet",
+			"workDates": "2007-2009",
+			"workLocation": "Newcastle, UK",
+			"description": "Section commander, leading groups of 8-10 cadets in training operations"
 		}
 	]
 };
 
+function displayWork() {
+	for (job in work.jobs){
+		$("#workExperience").append(HTMLworkStart);
+		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+		var formattedJobTitle = HTMLworkTitle.replace("%data%", work.jobs[job].position);
+		$(".work-entry:last").append(formattedEmployer+formattedJobTitle);
+		var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[job].workDates);
+		$(".work-entry:last").append(formattedWorkDates);
+		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].workLocation);
+		$(".work-entry:last").append(formattedLocation);
+		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+		$(".work-entry:last").append(formattedDescription);
+	}
+}
+displayWork();
 
 var education = {
 	"schools": [
@@ -71,25 +124,13 @@ var projects = {
 
 
 
-/*var formattedName = HTMLheaderName.replace("%data%", bio.name);
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedEmail = HTMLemail.replace("%data%", bio.contactInfo.email);
-var formattedTwitter = HTMLtwitter.replace("%data%", bio.contactInfo.twitter);
-var formattedGithub = HTMLgithub.replace("%data%", bio.contactInfo.github);
-var formattedBlog = HTMLblog.replace("%data%", bio.contactInfo.blog);
-var formattedPic = HTMLbioPic.replace("%data%", bio.pictureURL);
-var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
-var formattedSkills = HTMLskills.replace("%data%", bio.skills);
+/*
 
 
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-$("#header").append(formattedEmail);
+
+
 $("#header").append(formattedBlog);
 $("#header").append(formattedTwitter);
 $("#header").append(formattedGithub);
-$("#header").append(formattedPic);
-$("#header").append(formattedWelcomeMsg);
-$("#header").append(formattedSkills);
 */
 
