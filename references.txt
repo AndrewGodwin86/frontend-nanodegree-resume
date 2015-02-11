@@ -1,0 +1,2 @@
+Replace all occurences of a string
+http://stackoverflow.com/questions/1144783/replacing-all-occurrences-of-a-string-in-javascript

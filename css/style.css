@@ -213,3 +213,7 @@ span {
     display: block;
   }
 }
+/* Custom styles */
+ul a {
+  display: inline;
+}
