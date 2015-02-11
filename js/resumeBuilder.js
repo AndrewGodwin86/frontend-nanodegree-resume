@@ -1,16 +1,17 @@
 var bio = {
 	"name": "Andrew Godwin",
 	"role": "Front-end web developer",
-	"contactInfo": {
+	"contacts": {
+		"mobile": "+44 7999 123456",
 		"email": "andrew.godwin86@gmail.com",
 		"twitter": "AndrewGodwin86",
 		"github": "AndrewGodwin86",
 		"blog": "http://www.andrewrgodwin.com",
 		"location": "Teddington, UK"
 	},
-	"pictureURL": "images/me.jpg",
 	"welcomeMessage": "Hi, welcome to my resume!",
-	"skills": ["Programming", "Maths", "JavaScript"]
+	"skills": ["Programming", "Maths", "JavaScript"],
+	"biopic": "images/me.jpg"
 };
 
 bio.display = function(){
@@ -21,23 +22,23 @@ bio.display = function(){
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
 	$("#header").prepend(formattedName);
 
-	var formattedEmail = HTMLemail.replace(/%data%/g, bio.contactInfo.email);
+	var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
 	$("#topContacts").append(formattedEmail);
 	$("#footerContacts").append(formattedEmail);
 
-	var formattedTwitter = HTMLtwitter.replace(/%data%/g, bio.contactInfo.twitter);
+	var formattedTwitter = HTMLtwitter.replace(/%data%/g, bio.contacts.twitter);
 	$("#topContacts").append(formattedTwitter);
 	$("#footerContacts").append(formattedTwitter);
 
-	var formattedGithub = HTMLgithub.replace(/%data%/g, bio.contactInfo.github);
+	var formattedGithub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
 	$("#topContacts").append(formattedGithub);
 	$("#footerContacts").append(formattedGithub);
 
-	var formattedBlog = HTMLblog.replace(/%data%/g, bio.contactInfo.blog);
+	var formattedBlog = HTMLblog.replace(/%data%/g, bio.contacts.blog);
 	$("#topContacts").append(formattedBlog);
 	$("#footerContacts").append(formattedBlog);
 
-	var formattedPic = HTMLbioPic.replace("%data%", bio.pictureURL);
+	var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
 	$("#header").prepend(formattedPic);
 
 	var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
@@ -58,27 +59,27 @@ var work = {
 	"jobs": [
 		{
 			"employer": "GodwinConsulting.Net",
-			"position": "Consultant",
-			"url": "http://www.godwinconsulting.net",
-			"workDates": "2008 - present",
+			"title": "Consultant",
 			"location": "London, UK",
-			"description": "Carrying out various tasks including software audits, IT service assessments, web development."
+			"dates": "2008 - present",
+			"description": "Carrying out various tasks including software audits, IT service assessments, web development.",
+			"url": "http://www.godwinconsulting.net",
 		},
 		{
 			"employer": "Make Architects",
-			"position": "Business and Information Systems Coordinator",
-			"url": "http://www.makearchitects.com",
-			"workDates": "Sept 2009 - May 2014",
+			"title": "Business and Information Systems Coordinator",
 			"location": "London, UK",
-			"description": "Responsible for managing and developing the business systems of the practice, including Intranet, DAM system, ERP system. Research and development into new technologies."
+			"dates": "Sept 2009 - May 2014",
+			"description": "Responsible for managing and developing the business systems of the practice, including Intranet, DAM system, ERP system. Research and development into new technologies.",
+			"url": "http://www.makearchitects.com"
 		},
 		{
 			"employer": "Northumbrian Universities Officer Training Corps, British Army",
-			"position": "Officer Cadet",
-			"url": "http://www.army.mod.uk/UOTC/30765.aspx",
-			"workDates": "2007-2009",
+			"title": "Officer Cadet",
 			"location": "Newcastle-upon-Tyne, UK",
-			"description": "Section commander, leading groups of 8-10 cadets in training operations"
+			"dates": "2007-2009",
+			"description": "Section commander, leading groups of 8-10 cadets in training operations",
+			"url": "http://www.army.mod.uk/UOTC/30765.aspx"
 		}
 	]
 };
@@ -88,10 +89,10 @@ work.display = function() {
 		$("#workExperience").append(HTMLworkStart);
 
 		var formattedEmployer = HTMLworkEmployer.replace("#", work.jobs[job].url).replace("%data%", work.jobs[job].employer);
-		var formattedJobTitle = HTMLworkTitle.replace("%data%", work.jobs[job].position);
+		var formattedJobTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 		$(".work-entry:last").append(formattedEmployer+formattedJobTitle);
 
-		var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[job].workDates);
+		var formattedWorkDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 		$(".work-entry:last").append(formattedWorkDates);
 
 		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
@@ -109,15 +110,15 @@ var projects = {
 			"title": "Personal website",
 			"dates": "2014",
 			"description": "Design and development of my blog",
-			"url": "http://www.andrewrgodwin.com",
-			"images": []
+			"images": [],
+			"url": "http://www.andrewrgodwin.com"
 		},
 		{
 			"title": "Paper-Stories.com",
 			"dates": "2014",
-			"description": "Development and build of portfolio and blog site",
-			"url": "http://www.paper-stories.com",
-			"images": ["images/Project1-1.jpg"]
+			"description": "Development and build of portfolio and blog site for artist Kalliopi Kousouri",
+			"images": ["images/Project1-1.jpg"],
+			"url": "http://www.paper-stories.com"
 		}
 	]
 };
@@ -148,20 +149,21 @@ projects.display();
 var education = {
 	"schools": [
 		{
-			"schoolName": "Newcastle University",
-			"url": "http://www.newcastle.ac.uk",
-			"dates": "2005-2009",
-			"degree": "MMath (Hons)",
+			"name": "Newcastle University",
 			"location": "Newcastle-upon-Tyne, UK",
-			"major": ["Mathematics"]
+			"degree": "MMath (Hons)",
+			"majors": ["Mathematics"],
+			"dates": 2009,
+			"url": "http://www.newcastle.ac.uk"
+			
 		}
 	],
 	"onlineCourses": [
 		{
-			"onlineSchool": "Udacity",
-			"onlineTitle": "Front end web developer Nanodegree",
-			"onlineDates": "Present",
-			"onlineURL": "https://www.udacity.com/course/nd001"
+			"title": "Front end web developer Nanodegree",
+			"school": "Udacity",
+			"date": 2015,
+			"url": "https://www.udacity.com/course/nd001"
 		}
 	]
 };
@@ -171,7 +173,7 @@ education.display = function(){
 		$("#education").append(HTMLschoolStart);
 
 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-		var formattedName = HTMLschoolName.replace("#", education.schools[school].url).replace("%data%", education.schools[school].schoolName);
+		var formattedName = HTMLschoolName.replace("#", education.schools[school].url).replace("%data%", education.schools[school].name);
 		$(".education-entry:last").append(formattedName+formattedDegree);
 
 		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
@@ -180,7 +182,7 @@ education.display = function(){
 		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
 		$(".education-entry:last").append(formattedLocation);
 
-		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major[0]);
+		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors[0]);
 		$(".education-entry:last").append(formattedMajor);
 	}
 
@@ -191,14 +193,14 @@ education.display = function(){
 		for (course in education.onlineCourses) {
 			$("#education").append(HTMLschoolStart);
 
-			var formattedTitle = HTMLonlineTitle.replace("#", education.onlineCourses[course].onlineURL).replace("%data%", education.onlineCourses[course].onlineTitle);
-			var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].onlineSchool);
+			var formattedTitle = HTMLonlineTitle.replace("#", education.onlineCourses[course].url).replace("%data%", education.onlineCourses[course].title);
+			var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
 			$(".education-entry:last").append(formattedTitle+formattedSchool);
 
-			var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].onlineDates);
-			$(".education-entry:last").append(formattedDates);
+			var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].date);
+			$(".education-entry:last").append(formattedDate);
 
-			var formattedURL = HTMLonlineURL.replace("#", education.onlineCourses[course].onlineURL).replace("%data%", education.onlineCourses[course].onlineURL);
+			var formattedURL = HTMLonlineURL.replace("#", education.onlineCourses[course].url).replace("%data%", education.onlineCourses[course].url);
 			$(".education-entry:last").append(formattedURL);
 		}
 	}
