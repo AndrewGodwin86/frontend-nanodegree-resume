@@ -89,11 +89,20 @@ a {
   line-height: 28px;
   padding:0 5%;
   width:40%;
+  float: left;
+  margin-bottom:15px;
+}
+
+.skills-container {
+  width: 40%;
+  float: right;
+  padding: 0 5%;
 }
 
 #skillsH3 {
   color: #F5AE23;
-  display: none;
+  /*display: none;*/
+  padding: 0;
 }
 
 .orange {
@@ -204,6 +213,12 @@ span {
   }
   .welcome-message {
     width: 90%;
+    float: none;
+  }
+  .skills-container {
+    width: 90%;
+    float: none;
+    display:block;
   }
 }
 
@@ -226,8 +241,8 @@ span {
     display: block;
   }
 }
-/* Custom styles */
 
+/* Custom styles */
 .contact-link {
   color: white;
   display: inline;
