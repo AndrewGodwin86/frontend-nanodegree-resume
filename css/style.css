@@ -17,7 +17,8 @@ h1 {
   font-size: 40px;
   color: #F5A623;
   line-height: 48px;
-  display: inline;
+  /*display: inline;*/
+  text-align: center;
 }
 
 h2 {
@@ -116,7 +117,8 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  /*background-color: #484848;*/
+  background-color: #242830;
 }
 
 .flex-box {
@@ -142,9 +144,12 @@ ul {
 .biopic {
   /*float: left;*/
   padding: 10px;
-  width: 200px;
-  display: none;
+  /*width: 200px;*/
+  width: 120px;
+  /*display: none;*/
+  display: block;
   margin: 0 auto;
+  border-radius: 70px;
 }
 
 img {
@@ -179,7 +184,8 @@ span {
 
 @media only screen and (max-width:900px) {
   .biopic {
-    width: 175px;
+    /*width: 175px;*/
+    width:120px;
   }
 }
 
@@ -188,7 +194,8 @@ span {
     margin-top: 10%;
   }
   .biopic {
-    width: 150px;
+    /*width: 150px;*/
+    width: 120px;
   }
   .welcome-message {
     display: none;
@@ -215,10 +222,14 @@ span {
   }
 }
 /* Custom styles */
-ul a {
 
-}
 .contact-link {
   color: white;
   display: inline;
+}
+
+.role-text {
+  color: #fff;
+  display: block;
+  text-align: center;
 }
