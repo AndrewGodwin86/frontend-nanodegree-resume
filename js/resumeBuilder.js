@@ -1,3 +1,4 @@
+/* Bio */
 var bio = {
 	"name": "Andrew Godwin",
 	"role": "Front-end web developer",
@@ -14,7 +15,7 @@ var bio = {
 	"biopic": "images/me.jpg"
 };
 
-bio.display = function(){
+bio.display = function() {
 
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 	$("#header").prepend(formattedRole);
@@ -54,7 +55,7 @@ bio.display = function(){
 }
 bio.display();
 
-
+/* Work */
 var work = {
 	"jobs": [
 		{
@@ -63,7 +64,7 @@ var work = {
 			"location": "London, UK",
 			"dates": "2008 - present",
 			"description": "Carrying out various tasks including software audits, IT service assessments, web development.",
-			"url": "http://www.godwinconsulting.net",
+			"url": "http://www.godwinconsulting.net"
 		},
 		{
 			"employer": "Make Architects",
@@ -85,7 +86,7 @@ var work = {
 };
 
 work.display = function() {
-	for (job in work.jobs){
+	for (job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
 
 		var formattedEmployer = HTMLworkEmployer.replace("#", work.jobs[job].url).replace("%data%", work.jobs[job].employer);
@@ -104,6 +105,7 @@ work.display = function() {
 }
 work.display();
 
+/* Projects */
 var projects = {
 	"projects": [
 		{
@@ -123,7 +125,7 @@ var projects = {
 	]
 };
 
-projects.display = function(){
+projects.display = function() {
 	for (project in projects.projects) {
 		$("#projects").append(HTMLprojectStart);
 
@@ -136,7 +138,7 @@ projects.display = function(){
 		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 		$(".project-entry:last").append(formattedDescription);
 
-		if(projects.projects[project].images.length > 0){
+		if(projects.projects[project].images.length > 0) {
 			for(image in projects.projects[project].images) {
 				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
 				$(".project-entry:last").append(formattedImage);
@@ -146,6 +148,7 @@ projects.display = function(){
 };
 projects.display();
 
+/* Education */
 var education = {
 	"schools": [
 		{
@@ -155,7 +158,7 @@ var education = {
 			"majors": ["Mathematics"],
 			"dates": 2009,
 			"url": "http://www.newcastle.ac.uk"
-			
+
 		}
 	],
 	"onlineCourses": [
@@ -168,7 +171,7 @@ var education = {
 	]
 };
 
-education.display = function(){
+education.display = function() {
 	for (school in education.schools) {
 		$("#education").append(HTMLschoolStart);
 
@@ -186,7 +189,7 @@ education.display = function(){
 		$(".education-entry:last").append(formattedMajor);
 	}
 
-	if (education.onlineCourses){
+	if (education.onlineCourses) {
 
 		$("#education").append(HTMLonlineClasses);
 
@@ -208,7 +211,7 @@ education.display = function(){
 education.display();
 
 
-// Add Google Map
+// Google Map
 $("#mapDiv").append(googleMap);
 
 
