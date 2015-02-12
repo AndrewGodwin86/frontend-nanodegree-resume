@@ -26,6 +26,8 @@ bio.display = function() {
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 	$("#header").append(formattedRole);
 
+	$("#header").append(HTMLtopContacts);
+
 	var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
 	$("#topContacts").append(formattedEmail);
 	$("#footerContacts").append(formattedEmail);
