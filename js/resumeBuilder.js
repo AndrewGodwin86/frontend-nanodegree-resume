@@ -45,10 +45,10 @@ bio.display = function() {
 	$("#footerContacts").append(formattedBlog);
 
 	var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
-	$("#header").append(formattedWelcomeMsg);
+	$("#about").append(formattedWelcomeMsg);
 
 	if (bio.skills.length > 0) {
-		$("#header").append(HTMLskillsStart);
+		$("#about").append(HTMLskillsStart);
 		for(skill in bio.skills) {
 			var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
 			$("#skills").append(formattedSkill);
