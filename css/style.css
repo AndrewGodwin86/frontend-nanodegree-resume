@@ -84,8 +84,11 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #F3F3F3;
+  /*color: #F3F3F3;*/
+  color: #bbb;
   line-height: 28px;
+  padding:0 5%;
+  width:40%;
 }
 
 #skillsH3 {
@@ -132,10 +135,11 @@ a {
 }
 
 .center-content {
-  padding-top: 2.5%;
+  /*padding-top: 2.5%;*/
+  padding-top: 15px;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 2.5%
+  padding-bottom: 0;
 }
 
 ul {
@@ -199,7 +203,7 @@ span {
     width: 120px;
   }
   .welcome-message {
-    display: none;
+    width: 90%;
   }
 }
 

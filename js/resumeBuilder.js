@@ -10,7 +10,7 @@ var bio = {
 		"blog": "http://www.andrewrgodwin.com",
 		"location": "Teddington, UK"
 	},
-	"welcomeMessage": "Hi, welcome to my resume!",
+	"welcomeMessage": "I’m a technologist, programmer, content creator, mathematician and part-time rock star. I’ve developed, managed and worked on a huge variety of technology projects over the years. These have ranged from websites and iOS applications to Intranets, DAM applications, ERP systems and many, many more.",
 	"skills": ["Programming", "Maths", "JavaScript"],
 	"biopic": "images/me.jpg"
 };
