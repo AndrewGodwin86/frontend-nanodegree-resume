@@ -10,7 +10,7 @@ var bio = {
 		"blog": "http://www.andrewrgodwin.com",
 		"location": "Teddington, UK"
 	},
-	"welcomeMessage": "I’m a technologist, programmer, content creator, mathematician and part-time rock star. I’ve developed, managed and worked on a huge variety of technology projects over the years. These have ranged from websites and iOS applications to Intranets, DAM applications, ERP systems and many, many more.",
+	"welcomeMessage": "<p>I’m a technologist, programmer, content creator, mathematician and part-time rock star. I’ve developed, managed and worked on a huge variety of technology projects over the years. These have ranged from websites and iOS applications to Intranets, DAM applications, ERP systems and many, many more.</p><br><p>I’ve spent a great deal of time rapidly experimenting and developing with cutting edge technologies, creating engaging and dynamic user experiences and content to set businesses apart from their competitors.</p>",
 	"skills": ["Programming", "Maths", "JavaScript", "Project Management", "Web Design", "Video Direction and Editing", "Information Management", "IT Strategy"],
 	"biopic": "images/me.jpg"
 };
@@ -71,7 +71,7 @@ var work = {
 		{
 			"employer": "Make Architects",
 			"title": "Business and Information Systems Coordinator",
-			"location": "London, UK",
+			"location": "Fitzrovia, UK",
 			"dates": "Sept 2009 - May 2014",
 			"description": "Responsible for managing and developing the business systems of the practice, including Intranet, DAM system, ERP system. Research and development into new technologies.",
 			"url": "http://www.makearchitects.com"
@@ -79,7 +79,7 @@ var work = {
 		{
 			"employer": "Northumbrian Universities Officer Training Corps, British Army",
 			"title": "Officer Cadet",
-			"location": "Newcastle-upon-Tyne, UK",
+			"location": "St. Cuthbert's Keep, Newcastle-upon-Tyne, UK",
 			"dates": "2007-2009",
 			"description": "Section commander, leading groups of 8-10 cadets in training operations",
 			"url": "http://www.army.mod.uk/UOTC/30765.aspx"

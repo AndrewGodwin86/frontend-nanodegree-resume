@@ -25,11 +25,14 @@ h1 {
 }
 
 h2 {
-  font-weight: bold;
+  /*font-weight: bold;*/
+  font-weight: 300;
   font-size: 24px;
-  color: #999999;
+  /*color: #999999;*/
+  color: #242830;
   line-height: 29px;
   padding: 10px;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -47,7 +50,7 @@ h4 {
 }
 
 h2, h3, h4, h5 {
-  padding:10px;
+  padding:15px;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -72,7 +75,8 @@ h2, h3, h4, h5 {
 
 p {
   font-size: 14px;
-  color: #333333;
+  /*color: #333333;*/
+  color: #7b8185;
   line-height: 21px;
 }
 
@@ -84,8 +88,8 @@ a {
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
+  /*font-style: italic;*/
+  font-size: 14px;
   /*color: #F3F3F3;*/
   color: #bbb;
   line-height: 28px;
@@ -97,7 +101,6 @@ a {
 
 .skills-container {
   width: 40%;
-  float: right;
   padding: 0 5%;
 }
 
@@ -271,4 +274,10 @@ span {
 }
 .nav-item-link:hover {
   text-decoration: underline;
+}
+.footer {
+  background-color: #242830;
+}
+.connect {
+  color: #fff;
 }
