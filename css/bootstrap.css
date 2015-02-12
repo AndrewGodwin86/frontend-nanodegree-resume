@@ -973,6 +973,7 @@ tbody.collapse.in {
   width: 22px;
   height: 2px;
   border-radius: 1px;
+  padding: 0;
 }
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
@@ -983,7 +984,8 @@ tbody.collapse.in {
   }
 }
 .navbar-nav {
-  margin: 7.5px -15px;
+  /*margin: 7.5px -15px;*/
+  margin: 7.5px 0;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
