@@ -6,6 +6,7 @@
 
 .clearfix {
   overflow: auto;
+  clear: both;
 }
 
 .education-entry, .work-entry, .project-entry {
