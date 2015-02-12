@@ -17,11 +17,14 @@ var bio = {
 
 bio.display = function() {
 
-	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-	$("#header").prepend(formattedRole);
+	var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
+	$("#header").append(formattedPic);
 
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
-	$("#header").prepend(formattedName);
+	$("#header").append(formattedName);
+
+	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+	$("#header").append(formattedRole);
 
 	var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
 	$("#topContacts").append(formattedEmail);
@@ -38,9 +41,6 @@ bio.display = function() {
 	var formattedBlog = HTMLblog.replace(/%data%/g, bio.contacts.blog);
 	$("#topContacts").append(formattedBlog);
 	$("#footerContacts").append(formattedBlog);
-
-	var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
-	$("#header").prepend(formattedPic);
 
 	var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
 	$("#header").append(formattedWelcomeMsg);

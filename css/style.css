@@ -233,3 +233,19 @@ span {
   display: block;
   text-align: center;
 }
+
+.nav-list {
+  float: right;
+}
+
+.nav-item {
+  display: inline;
+  padding: 0 10px;
+}
+
+.nav-item-link {
+  display: inline;
+}
+.nav-item-link:hover {
+  text-decoration: underline;
+}
