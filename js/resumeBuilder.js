@@ -11,7 +11,7 @@ var bio = {
 		"location": "Teddington, UK"
 	},
 	"welcomeMessage": "I’m a technologist, programmer, content creator, mathematician and part-time rock star. I’ve developed, managed and worked on a huge variety of technology projects over the years. These have ranged from websites and iOS applications to Intranets, DAM applications, ERP systems and many, many more.",
-	"skills": ["Programming", "Maths", "JavaScript"],
+	"skills": ["Programming", "Maths", "JavaScript", "Project Management", "Web Design", "Video Direction and Editing", "Information Management", "IT Strategy"],
 	"biopic": "images/me.jpg"
 };
 

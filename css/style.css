@@ -20,6 +20,8 @@ h1 {
   line-height: 48px;
   /*display: inline;*/
   text-align: center;
+  font-weight:300;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -265,6 +267,7 @@ span {
 
 .nav-item-link {
   display: inline;
+  text-transform: uppercase;
 }
 .nav-item-link:hover {
   text-decoration: underline;
