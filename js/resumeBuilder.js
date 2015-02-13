@@ -103,7 +103,6 @@ var work = {
 		}
 	}
 };
-
 work.display();
 
 /* Projects */
@@ -112,7 +111,7 @@ var projects = {
 		{
 			"title": "Personal website",
 			"dates": "2014",
-			"description": "Design and development of my blog",
+			"description": "Design and development of my blog. Based on Wordpress, it uses the Roots.io framework which integrates Bootstrap into a Wordpress theme.",
 			"images": [],
 			"url": "http://www.andrewrgodwin.com"
 		},
@@ -122,6 +121,14 @@ var projects = {
 			"description": "Development and build of portfolio and blog site for artist Kalliopi Kousouri",
 			"images": ["images/Project1-1.jpg"],
 			"url": "http://www.paper-stories.com"
+		},
+		{
+			"title": "Ecobuild Cinema Film | Make Architects",
+			"dates": "2014",
+			"description": "In Make's words: <br>\"Exploring the concept of recycling through distinctive design, materiality and construction technique, Make Architects created a unique cinema for the Regeneration Film Festival. <br>The cinema took two days to construct on site, with over 1,200 pieces of reclaimed cardboard being tied together.\"<br>I shot and edited this film using GoPro Hero 3+ cameras.",
+			"images": [],
+			"url": "https://www.youtube.com/watch?v=oPoNYtPThBQ",
+			"embedData": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/oPoNYtPThBQ\" frameborder=\"0\" allowfullscreen></iframe>"
 		}
 	],
 	"display": function() {
@@ -143,10 +150,10 @@ var projects = {
 					$(".project-entry:last").append(formattedImage);
 				}
 			}
+			$(".project-entry:last").append(projects.projects[project].embedData);
 		}
 	}
 };
-
 projects.display();
 
 /* Education */
@@ -208,7 +215,6 @@ var education = {
 		}
 	}
 };
-
 education.display();
 
 // Google Map
