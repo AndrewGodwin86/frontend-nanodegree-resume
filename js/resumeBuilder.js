@@ -78,7 +78,7 @@ var work = {
 		{
 			"employer": "Northumbrian Universities Officer Training Corps, British Army",
 			"title": "Officer Cadet",
-			"location": "St. Cuthbert's Keep, Newcastle-upon-Tyne, UK",
+			"location": "Newcastle-upon-Tyne, UK",
 			"dates": "2007-2009",
 			"description": "Section commander, leading groups of 8-10 cadets in training operations",
 			"url": "http://www.army.mod.uk/UOTC/30765.aspx"

@@ -116,7 +116,7 @@ function initializeMap() {
   };
 
   // This next line makes `map` a new Google Map JavaScript Object and attaches it to
-  // <div id="map">, which is appended as part of an exercise late in the course.
+  // <div class="map">, which is appended as part of an exercise late in the course.
   map = new google.maps.Map(document.querySelector('.map'), mapOptions);
 
 
@@ -177,6 +177,7 @@ function initializeMap() {
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
       // your code goes here!
+      infoWindow.open(map, this);
     });
 
     // this is where the pin actually gets added to the map.
