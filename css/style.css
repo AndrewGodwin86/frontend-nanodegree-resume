@@ -1,7 +1,7 @@
 * {
-  padding:0;
-  margin:0;
-  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .clearfix {
@@ -9,7 +9,9 @@
   clear: both;
 }
 
-.education-entry, .work-entry, .project-entry {
+.education-entry,
+.work-entry,
+.project-entry {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -18,17 +20,14 @@ h1 {
   font-size: 40px;
   color: #F5A623;
   line-height: 48px;
-  /*display: inline;*/
   text-align: center;
-  font-weight:300;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
 h2 {
-  /*font-weight: bold;*/
   font-weight: 300;
   font-size: 24px;
-  /*color: #999999;*/
   color: #242830;
   line-height: 29px;
   padding: 10px;
@@ -36,7 +35,6 @@ h2 {
 }
 
 h3 {
-  /*font-style: italic;*/
   font-size: 20px;
   color: #000000;
   line-height: 22px;
@@ -50,12 +48,14 @@ h4 {
   line-height: 17px;
 }
 
-h2, h3, h4, h5 {
-  padding:15px;
+h2,
+h3,
+h4,
+h5 {
+  padding: 15px;
   padding-left: 5%;
   padding-right: 5%;
 }
-
 
 .date-text {
   font-style: italic;
@@ -76,7 +76,6 @@ h2, h3, h4, h5 {
 
 p {
   font-size: 14px;
-  /*color: #333333;*/
   color: #7b8185;
   line-height: 25px;
 }
@@ -88,28 +87,58 @@ a {
   display: block;
 }
 
+/* Nav */
+.nav-list {
+  float: right;
+}
+
+.nav-item {
+  display: inline;
+  padding: 0 10px;
+}
+
+.nav-item-link {
+  display: inline;
+  text-transform: uppercase;
+}
+.nav-item-link:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+/* TODO: Replace with image later */
+.header {
+  background-color: #242830;
+}
+
+.biopic {
+  padding: 10px;
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 70px;
+}
+
 /* About */
 .about-content {
-  width:40%;
+  width: 40%;
   padding: 0 5%;
   float: left;
 }
 
 .about-image {
   padding: 0 5%;
-  width:90%;
+  width: 90%;
   float: right;
   margin-bottom: 30px;
 }
 
 .welcome-message {
-  /*font-style: italic;*/
   font-size: 14px;
-  /*color: #F3F3F3;*/
   color: #bbb;
   line-height: 28px;
-  padding:0;
-  margin-bottom:15px;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 .skills-container {
@@ -136,16 +165,11 @@ a {
 .gray {
   background-color: #F3F3F3;
   padding-bottom: 10px;
-  clear:both;
+  clear: both;
 }
 
 .dark-gray {
   background-color: #4A4A4A;
-}
-
-/* TODO: Replace with image later */
-.header {
-  background-color: #242830;
 }
 
 .flex-box {
@@ -158,7 +182,6 @@ a {
 }
 
 .center-content {
-  /*padding-top: 2.5%;*/
   padding-top: 15px;
   padding-left: 5%;
   padding-right: 5%;
@@ -169,22 +192,11 @@ ul {
   list-style-type: none;
 }
 
-.biopic {
-  /*float: left;*/
-  padding: 10px;
-  /*width: 200px;*/
-  width: 120px;
-  /*display: none;*/
-  display: block;
-  margin: 0 auto;
-  border-radius: 70px;
-}
-
 img {
   padding: 0 10px;
 }
 
-/* Bar chart stuff */
+/* Bar chart styles*/
 .chart div {
   font: 10px sans-serif;
   background-color: #4A4A4A;
@@ -200,47 +212,7 @@ span {
   padding: 5px;
 }
 
-.letsConnect {
-  text-align: center;
-}
-
-
-
-@media only screen and (max-width: 1024px) {
-  .letsConnect {
-    margin-top: 5%;
-  }
-}
-
-@media only screen and (max-width:900px) {
-  .biopic {
-    /*width: 175px;*/
-    width:120px;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .letsConnect {
-    margin-top: 10%;
-  }
-  .biopic {
-    /*width: 150px;*/
-    width: 120px;
-  }
-  .about-content {
-    width:90%;
-  }
-  .welcome-message {
-    width: 100%;
-    float: none;
-  }
-  .skills-container {
-    width: 100%;
-    float: none;
-    display:block;
-  }
-}
-
+/* Map */
 .map {
   display: block;
   height: 100%;
@@ -254,6 +226,53 @@ span {
   padding-bottom: 5%;
 }
 
+/* Connect/footer */
+.letsConnect {
+  text-align: center;
+}
+
+.footer {
+  background-color: #242830;
+}
+
+.connect {
+  color: #fff;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  .letsConnect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .letsConnect {
+    margin-top: 10%;
+  }
+  .biopic {
+    width: 120px;
+  }
+  .about-content {
+    width: 90%;
+  }
+  .welcome-message {
+    width: 100%;
+    float: none;
+  }
+  .skills-container {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+}
+
 @media only screen and (min-width: 750px) {
   .biopic {
     display: block;
@@ -263,7 +282,6 @@ span {
   }
 }
 
-/* Custom styles */
 .contact-link {
   color: white;
   display: inline;
@@ -275,30 +293,7 @@ span {
   text-align: center;
 }
 
-.nav-list {
-  float: right;
-}
-
-.nav-item {
-  display: inline;
-  padding: 0 10px;
-}
-
-.nav-item-link {
-  display: inline;
-  text-transform: uppercase;
-}
-.nav-item-link:hover {
-  text-decoration: underline;
-}
-.footer {
-  background-color: #242830;
-}
-.connect {
-  color: #fff;
-}
-
 .section-title {
   text-align: center;
-  padding:25px inherit;
+  padding: 25px inherit;
 }
