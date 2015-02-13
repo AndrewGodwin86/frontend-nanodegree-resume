@@ -18,15 +18,15 @@ var bio = {
 bio.display = function() {
 
 	var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
-	$("#header").append(formattedPic);
+	$(".header").append(formattedPic);
 
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
-	$("#header").append(formattedName);
+	$(".header").append(formattedName);
 
 	var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-	$("#header").append(formattedRole);
+	$(".header").append(formattedRole);
 
-	$("#header").append(HTMLtopContacts);
+	$(".header").append(HTMLtopContacts);
 
 	var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
 	$("#topContacts").append(formattedEmail);
@@ -214,6 +214,6 @@ education.display();
 
 
 // Google Map
-$("#mapDiv").append(googleMap);
+$(".map-container").append(googleMap);
 
 
