@@ -36,10 +36,11 @@ h2 {
 }
 
 h3 {
-  font-style: italic;
+  /*font-style: italic;*/
   font-size: 20px;
   color: #000000;
   line-height: 22px;
+  font-weight: 300;
 }
 
 h4 {
@@ -77,7 +78,7 @@ p {
   font-size: 14px;
   /*color: #333333;*/
   color: #7b8185;
-  line-height: 21px;
+  line-height: 25px;
 }
 
 a {
@@ -87,27 +88,36 @@ a {
   display: block;
 }
 
+/* About */
+.about-content {
+  width:40%;
+  padding: 0 5%;
+  float: left;
+}
+
+.about-image {
+  padding: 0 5%;
+  width:90%;
+  float: right;
+  margin-bottom: 30px;
+}
+
 .welcome-message {
   /*font-style: italic;*/
   font-size: 14px;
   /*color: #F3F3F3;*/
   color: #bbb;
   line-height: 28px;
-  padding:0 5%;
-  width:40%;
-  float: left;
+  padding:0;
   margin-bottom:15px;
 }
 
 .skills-container {
-  width: 40%;
-  padding: 0 5%;
+  padding: 0;
 }
 
-#skillsH3 {
-  color: #F5AE23;
-  /*display: none;*/
-  padding: 0;
+.skills-heading {
+  padding: 15px 0 15px;
 }
 
 .orange {
@@ -172,7 +182,7 @@ ul {
 }
 
 img {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 /* Bar chart stuff */
@@ -195,6 +205,8 @@ span {
   text-align: center;
 }
 
+
+
 @media only screen and (max-width: 1024px) {
   #letsConnect {
     margin-top: 5%;
@@ -216,12 +228,15 @@ span {
     /*width: 150px;*/
     width: 120px;
   }
+  .about-content {
+    width:90%;
+  }
   .welcome-message {
-    width: 90%;
+    width: 100%;
     float: none;
   }
   .skills-container {
-    width: 90%;
+    width: 100%;
     float: none;
     display:block;
   }
@@ -244,6 +259,9 @@ span {
   #skillsH3,
   .biopic {
     display: block;
+  }
+  .about-image {
+    width: 40%;
   }
 }
 
@@ -280,4 +298,9 @@ span {
 }
 .connect {
   color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  padding:25px inherit;
 }
