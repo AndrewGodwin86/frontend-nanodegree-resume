@@ -128,7 +128,7 @@ var projects = {
 			"description": "In Make's words: <br>\"Exploring the concept of recycling through distinctive design, materiality and construction technique, Make Architects created a unique cinema for the Regeneration Film Festival. <br>The cinema took two days to construct on site, with over 1,200 pieces of reclaimed cardboard being tied together.\"<br>I shot and edited this film using GoPro Hero 3+ cameras.",
 			"images": [],
 			"url": "https://www.youtube.com/watch?v=oPoNYtPThBQ",
-			"embedData": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/oPoNYtPThBQ\" frameborder=\"0\" allowfullscreen></iframe>"
+			"embedData": "<iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/oPoNYtPThBQ\" allowfullscreen></iframe>"
 		}
 	],
 	"display": function() {
@@ -150,7 +150,10 @@ var projects = {
 					$(".project-entry:last").append(formattedImage);
 				}
 			}
-			$(".project-entry:last").append(projects.projects[project].embedData);
+			if(projects.projects[project].embedData) {
+				var formattedEmbed = HTMLprojectEmbedResponsive.replace("%data%", projects.projects[project].embedData);
+				$(".project-entry:last").append(formattedEmbed);
+			}
 		}
 	}
 };

@@ -1,2 +1,5 @@
 Replace all occurences of a string using regexp
 http://stackoverflow.com/questions/1144783/replacing-all-occurrences-of-a-string-in-javascript
+
+Responsive embed from Bootstrap
+http://getbootstrap.com/components/#responsive-embed
