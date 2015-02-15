@@ -100,6 +100,10 @@ var work = {
 
 			var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 			$(".work-entry:last").append(formattedDescription);
+
+			if(job < work.jobs.length-1) {
+				$("#workExperience").append(HTMLworkDivider);
+			}
 		}
 	}
 };
