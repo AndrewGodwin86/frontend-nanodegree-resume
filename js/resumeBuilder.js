@@ -125,7 +125,7 @@ var projects = {
 		{
 			"title": "Ecobuild Cinema Film | Make Architects",
 			"dates": "2014",
-			"description": "<p>In Make's words: <br>\"Exploring the concept of recycling through distinctive design, materiality and construction technique, Make Architects created a unique cinema for the Regeneration Film Festival. <br>The cinema took two days to construct on site, with over 1,200 pieces of reclaimed cardboard being tied together.\"</p><p>I shot and edited this film using GoPro Hero 3+ cameras.</p>",
+			"description": "<p>Make Architects created a unique cinema for the Regeneration Film Festival. The cinema took two days to construct on site, with over 1,200 pieces of reclaimed cardboard being tied together. I shot and edited this film using GoPro Hero 3+ cameras.</p>",
 			"images": [],
 			"url": "https://www.youtube.com/watch?v=oPoNYtPThBQ",
 			"embedContent": "<iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/oPoNYtPThBQ\" allowfullscreen></iframe>"
