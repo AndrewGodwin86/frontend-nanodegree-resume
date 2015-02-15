@@ -148,13 +148,14 @@ var projects = {
 				}
 			}
 
-			var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-			$(".project-entry:last").append(formattedDescription);
-
 			if(projects.projects[project].embedContent) {
 				var formattedEmbed = HTMLprojectEmbedResponsive.replace("%data%", projects.projects[project].embedContent);
 				$(".project-entry:last").append(formattedEmbed);
 			}
+
+			var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+			$(".project-entry:last").append(formattedDescription);
+
 		}
 	}
 };
