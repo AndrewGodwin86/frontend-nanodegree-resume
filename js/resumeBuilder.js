@@ -141,15 +141,16 @@ var projects = {
 			var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
 			$(".project-entry:last").append(formattedDates);
 
-			var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-			$(".project-entry:last").append(formattedDescription);
-
 			if(projects.projects[project].images.length > 0) {
 				for(image in projects.projects[project].images) {
 					var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
 					$(".project-entry:last").append(formattedImage);
 				}
 			}
+
+			var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+			$(".project-entry:last").append(formattedDescription);
+
 			if(projects.projects[project].embedContent) {
 				var formattedEmbed = HTMLprojectEmbedResponsive.replace("%data%", projects.projects[project].embedContent);
 				$(".project-entry:last").append(formattedEmbed);
