@@ -69,8 +69,8 @@ h5 {
   font-style: italic;
   font-size: 14px;
   color: #999;
-  line-height: 16px;
-  float: left;
+  /*line-height: 16px;*/
+  /*float: left;*/
 }
 
 
@@ -248,6 +248,7 @@ span {
 .project-entry {
   background: #fff;
   padding: 15px;
+  margin-bottom: 30px;
 }
 
 
@@ -256,6 +257,10 @@ span {
   padding-right: 0;
 }
 
+.project-image {
+  width: 100%;
+  padding: 0;
+}
 
 .video-wrapper {
   max-width: 100%;
@@ -346,11 +351,9 @@ span {
     width: 40%;
   }
 
-.project-entry {
-  width: 30%;
-}
-  .video-wrapper {
-    max-width: 40%;
+
+  .project-entry {
+    width: 30%;
   }
 
 
