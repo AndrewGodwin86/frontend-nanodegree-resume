@@ -275,7 +275,8 @@ span {
 }
 
 
-.project-title {
+.project-entry-title,
+.work-entry-title {
   padding: 0;
   line-height: 20px;
 }
