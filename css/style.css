@@ -231,6 +231,25 @@ span {
   padding: 5px;
 }
 
+/* Projects */
+.projects {
+  background: #242830;
+}
+
+/* Projects section heading, rather than title of individual project */
+.projects-title {
+  color: #fff;
+}
+
+.project-entries-container {
+  padding: 0 5%;
+}
+
+.project-entry {
+  background: #fff;
+  padding: 15px;
+}
+
 
 .project-title {
   padding-left: 0;
@@ -327,6 +346,9 @@ span {
     width: 40%;
   }
 
+.project-entry {
+  width: 30%;
+}
   .video-wrapper {
     max-width: 40%;
   }
