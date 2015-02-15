@@ -232,6 +232,17 @@ span {
 }
 
 
+.project-title {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.video-wrapper {
+  max-width: 100%;
+}
+
+
 /* Map */
 .map {
   display: block;
@@ -310,9 +321,17 @@ span {
   .biopic {
     display: block;
   }
+
+
   .about-image {
     width: 40%;
   }
+
+  .video-wrapper {
+    max-width: 40%;
+  }
+
+
   .map-container {
     padding-bottom: 8%;
   }
