@@ -111,14 +111,14 @@ var projects = {
 		{
 			"title": "Personal website",
 			"dates": "2014",
-			"description": "Design and development of my blog. Based on Wordpress, it uses the Roots.io framework which integrates Bootstrap into a Wordpress theme.",
+			"description": "Design and development of my blog. Built on Wordpress, it uses the Roots.io framework which integrates Bootstrap into a Wordpress theme.",
 			"images": [],
 			"url": "http://www.andrewrgodwin.com"
 		},
 		{
 			"title": "Paper-Stories.com",
 			"dates": "2014",
-			"description": "Development and build of portfolio and blog site for artist Kalliopi Kousouri",
+			"description": "Development and build of portfolio and blog site for paper-cutting artist Kalliopi Kousouri. The site is built on the Roots.io Wordpress stack",
 			"images": ["images/Project1-1.jpg"],
 			"url": "http://www.paper-stories.com"
 		},
@@ -128,7 +128,7 @@ var projects = {
 			"description": "<p>In Make's words: <br>\"Exploring the concept of recycling through distinctive design, materiality and construction technique, Make Architects created a unique cinema for the Regeneration Film Festival. <br>The cinema took two days to construct on site, with over 1,200 pieces of reclaimed cardboard being tied together.\"</p><p>I shot and edited this film using GoPro Hero 3+ cameras.</p>",
 			"images": [],
 			"url": "https://www.youtube.com/watch?v=oPoNYtPThBQ",
-			"embedData": "<iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/oPoNYtPThBQ\" allowfullscreen></iframe>"
+			"embedContent": "<iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/oPoNYtPThBQ\" allowfullscreen></iframe>"
 		}
 	],
 	"display": function() {
@@ -150,8 +150,8 @@ var projects = {
 					$(".project-entry:last").append(formattedImage);
 				}
 			}
-			if(projects.projects[project].embedData) {
-				var formattedEmbed = HTMLprojectEmbedResponsive.replace("%data%", projects.projects[project].embedData);
+			if(projects.projects[project].embedContent) {
+				var formattedEmbed = HTMLprojectEmbedResponsive.replace("%data%", projects.projects[project].embedContent);
 				$(".project-entry:last").append(formattedEmbed);
 			}
 		}
