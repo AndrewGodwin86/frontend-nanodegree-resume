@@ -41,7 +41,7 @@ var HTMLworkDivider = '<hr class="work-entry-divider">'
 
 var HTMLprojectStart = '<div class="project-entry flex-item"></div>';
 var HTMLprojectTitle = '<h3 class="project-entry-title"><a href="#">%data%</a></h3>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
+var HTMLprojectDates = '<div class="project-date-text">%data%</div>';
 var HTMLprojectDescription = '<p>%data%</p>';
 var HTMLprojectImage = '<img src="%data%" class="project-image">';
 var HTMLprojectEmbedResponsive = '<div class="video-wrapper"><div class="embed-responsive embed-responsive-16by9">%data%</div></div>';
