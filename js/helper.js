@@ -47,15 +47,15 @@ var HTMLprojectImage = '<img src="%data%" class="project-image">';
 var HTMLprojectEmbedResponsive = '<div class="video-wrapper"><div class="embed-responsive embed-responsive-16by9">%data%</div></div>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' - %data%</a>';
+var HTMLschoolName = '<h3 class="education-entry-title"><a href="#">%data%';
+var HTMLschoolDegree = ' - %data%</a></h3>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
+var HTMLonlineClasses = '<hr class="education-entry-divider"><h3 class="online-classes">Online Classes</h3>';
+var HTMLonlineTitle = '<h3 class="education-entry-title"><a href="#">%data%';
+var HTMLonlineSchool = ' - %data%</a></h3>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a>';
 

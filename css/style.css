@@ -250,9 +250,10 @@ span {
   text-align: center;
 }
 
-.work-entry-divider {
+.work-entry-divider,
+.education-entry-divider {
   width: 30%;
-  border-top: 1px solid #f5a623;
+  border-top: 1px solid;
   margin: 15px auto;
 }
 
@@ -282,7 +283,8 @@ span {
 
 
 .project-entry-title,
-.work-entry-title {
+.work-entry-title,
+.education-entry-title {
   padding: 0;
   line-height: 20px;
 }
@@ -295,6 +297,7 @@ span {
   /*line-height: 16px;*/
 }
 
+
 .project-image {
   width: 100%;
   padding: 0;
@@ -304,6 +307,9 @@ span {
 .video-wrapper {
   max-width: 100%;
 }
+
+
+/* Education */
 
 
 /* Map */
@@ -397,7 +403,8 @@ span {
   }
 
 
-  .work-entry {
+  .work-entry,
+  .education-entry {
     width: 50%;
     padding: 0 25%;
   }
@@ -406,6 +413,11 @@ span {
     width: 30%;
   }
 
+
+  .online-classes {
+    width: 50%;
+    padding: 0 25%;
+  }
 
   .map-container {
     padding-bottom: 8%;
