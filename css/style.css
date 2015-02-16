@@ -250,6 +250,7 @@ span {
   text-align: center;
 }
 
+
 .work-entry-divider,
 .education-entry-divider {
   width: 30%;
@@ -309,9 +310,6 @@ span {
 }
 
 
-/* Education */
-
-
 /* Map */
 .map {
   display: block;
@@ -357,8 +355,6 @@ span {
   .biopic {
     width: 120px;
   }
-
-
 }
 
 
@@ -409,6 +405,7 @@ span {
     padding: 0 25%;
   }
 
+
   .project-entry {
     width: 30%;
   }
@@ -418,6 +415,7 @@ span {
     width: 50%;
     padding: 0 25%;
   }
+
 
   .map-container {
     padding-bottom: 8%;
