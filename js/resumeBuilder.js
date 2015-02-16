@@ -46,7 +46,7 @@ var bio = {
 
 		if (bio.skills.length > 0) {
 			$(".about-content").append(HTMLskillsStart);
-			for(skill in bio.skills) {
+			for (skill in bio.skills) {
 				var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
 				$("#skills").append(formattedSkill);
 			}
@@ -145,14 +145,14 @@ var projects = {
 			var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
 			$(".project-entry:last").append(formattedDates);
 
-			if(projects.projects[project].images.length > 0) {
-				for(image in projects.projects[project].images) {
+			if (projects.projects[project].images.length > 0) {
+				for (image in projects.projects[project].images) {
 					var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
 					$(".project-entry:last").append(formattedImage);
 				}
 			}
 
-			if(projects.projects[project].embedContent) {
+			if (projects.projects[project].embedContent) {
 				var formattedEmbed = HTMLprojectEmbedResponsive.replace("%data%", projects.projects[project].embedContent);
 				$(".project-entry:last").append(formattedEmbed);
 			}
